@@ -1,0 +1,25 @@
+#banner .slick-dots {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+}
+
+#banner .slick-dots li button {
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+#banner .slick-dots li.slick-active button {
+    width: 32px; /* Double the width of the active dot */
+    height: 16px; /* Keep the height the same */
+    background: var(--hover);
+    border-color: var(--hover);
+    transform: translateX(-50%); /* Adjust the position */
+}
