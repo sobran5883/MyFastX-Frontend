@@ -90,7 +90,7 @@ export default function Login() {
         return;
       }
       // const res = await axios.post('https://emonoid.com/api/auth/verifyotp', { mobile, otp });
-      const res = await axios.post('/api/auth/verifyotp', { mobile, otp });
+      const res = await axios.post('https://myfastx-backend.onrender.com/api/auth/verifyotp', { mobile, otp });
       const data = res.data;
       if (data.success === false) {
         toast.error('Please enter valid OTP!')
@@ -113,7 +113,7 @@ export default function Login() {
     try {
       dispatch(signInStart());
       // const res = await fetch('https://emonoid.com/api/auth/login', {
-      const res = await fetch('/api/auth/login', {
+      const res = await fetch('https://myfastx-backend.onrender.com/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
