@@ -59,7 +59,7 @@ export default function Login() {
       }  
       dispatch(getOtpStart());
       // const res = await axios.post('https://emonoid.com/api/auth/sendotp', { mobile });
-      const res = await axios.post('/api/auth/sendotp', { mobile });
+      const res = await axios.post('https://myfastx-backend.onrender.com/api/auth/sendotp', { mobile });
       console.log(res.data);
       setOtpSent(true);
 

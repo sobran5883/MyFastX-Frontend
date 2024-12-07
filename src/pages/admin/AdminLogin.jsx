@@ -26,7 +26,7 @@ const AdminLogin = () => {
       e.preventDefault();
       try {
         dispatch(signInStart());
-        const response = await fetch('/api/admin/login', {
+        const response = await fetch('https://myfastx-backend.onrender.com/api/admin/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

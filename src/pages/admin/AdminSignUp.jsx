@@ -23,7 +23,7 @@ const AdminLogin = () => {
     const handleSubmit = async (e)=>{
       e.preventDefault();
       try{
-        const res = await fetch('/api/admin/signup',
+        const res = await fetch('https://myfastx-backend.onrender.com/api/admin/signup',
         {
             method:'POST',
             headers:{
