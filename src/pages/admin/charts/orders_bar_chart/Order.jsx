@@ -1,5 +1,5 @@
 // BarChart.js
-import React, { Component } from "react";
+import { Component } from "react";
 import Chart from "react-apexcharts";
 import chartData from "./OrderData";
 
@@ -17,7 +17,7 @@ class BarChart extends Component {
           options={this.state.options}
           series={this.state.series}
           type="bar"
-          width="500"
+          width={500}
           height={300}
         />
       </div>

@@ -1,6 +1,6 @@
 // chartData.js
 const DispatchData = {
-    series: [40],
+    series: [90],
     options: {
         colors:["#00B074"],
       chart: {
@@ -14,7 +14,7 @@ const DispatchData = {
           },
           dataLabels: {
             name: {
-              offsetY: 85,
+              offsetY: 60,
               show: true,
               color: '#464255',
               fontSize: '15px'

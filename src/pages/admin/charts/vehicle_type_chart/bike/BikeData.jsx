@@ -13,7 +13,7 @@
           },
           dataLabels: {
             name: {
-              offsetY: 60,
+              offsetY: 75,
               show: true,
               color: '#464255',
               fontSize: '14px'

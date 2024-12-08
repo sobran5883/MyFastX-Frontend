@@ -14,7 +14,7 @@ const chartData = {
           },
           dataLabels: {
             name: {
-              offsetY: 100,
+              offsetY: 85,
               show: true,
               color: '#464255',
               fontSize: '14px'

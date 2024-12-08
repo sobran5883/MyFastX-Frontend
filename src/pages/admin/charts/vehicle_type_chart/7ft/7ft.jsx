@@ -10,15 +10,6 @@ class RadialBarChart extends Component {
     this.state = chartData;
   }
 
-  componentDidMount() {
-    this.renderChart();
-  }
-
-  renderChart() {
-    const { options, series } = this.state;
-    const chart = new ApexCharts(document.querySelector("#radial-bar-chart"), options);
-    chart.render();
-  }
 
   render() {
     return (<div>

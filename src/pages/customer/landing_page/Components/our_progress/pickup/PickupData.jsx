@@ -1,6 +1,6 @@
 // chartData.js
 const PickupData = {
-    series: [20],
+    series: [95],
     options: {
         colors:["#00B074"],
       chart: {
@@ -14,7 +14,7 @@ const PickupData = {
           },
           dataLabels: {
             name: {
-              offsetY: 85,
+              offsetY: 60,
               show: true,
               color: '#464255',
               fontSize: '15px'

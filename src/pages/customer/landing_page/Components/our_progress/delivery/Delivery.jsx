@@ -1,5 +1,5 @@
 // RadialBarChart.js
-import { Component } from "react";
+import React, { Component } from "react";
 import Chart from "react-apexcharts";
 import DeliveryData from "./DeliveryData";
 
@@ -7,30 +7,20 @@ class Delivery extends Component {
   constructor(props) {
     super(props);
 
+    // Initialize state with the data from DeliveryData
     this.state = DeliveryData;
   }
 
-  componentDidMount() {
-    this.renderChart();
-  }
-
-  renderChart() {
-    const { options, series } = this.state;
-    const chart = new ApexCharts(document.querySelector("#radial-bar-chart"), options);
-    chart.render();
-  }
-
   render() {
-    return (<div>
+    return (
       <div className="radial-bar-chart">
         <Chart
-          options={this.state.options}
-          series={this.state.series}
-          type="radialBar"
-          height={200}
-          width={130}
+          options={this.state.options} // Chart options
+          series={this.state.series}   // Data series
+          type="radialBar"            // Chart type
+          height={200}                // Chart height
+          width={130}                 // Chart width
         />
-      </div>
       </div>
     );
   }

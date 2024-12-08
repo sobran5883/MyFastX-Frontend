@@ -95,8 +95,8 @@ export default function Navbar(){
                     </div>
                 </div>
                 <div className='flex gap-2'>
-                    <NavLink to='/1'><FaFigma className='hidden md:block text-xl text-red-500 cursor-pointer'/></NavLink>
-                    <NavLink to='/2'><FaFigma className='hidden md:block text-xl text-blue-500 cursor-pointer'/></NavLink>
+                    <NavLink to='/temp1'><FaFigma className='hidden md:block text-xl text-red-500 cursor-pointer'/></NavLink>
+                    <NavLink to='/temp2'><FaFigma className='hidden md:block text-xl text-blue-500 cursor-pointer'/></NavLink>
                 </div>
                 <div className='humburger' onClick={handleClick}>
                     {click ?(<FaTimes size={18} style={{color:"black"}}/>):(<FaBars size={18} style={{color:"black"}}/>)}

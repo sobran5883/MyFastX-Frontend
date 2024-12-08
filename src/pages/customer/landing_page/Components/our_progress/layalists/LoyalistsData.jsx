@@ -14,7 +14,7 @@ const LoyalistsData = {
           },
           dataLabels: {
             name: {
-              offsetY: 85,
+              offsetY: 60,
               show: true,
               color: '#464255',
               fontSize: '15px'

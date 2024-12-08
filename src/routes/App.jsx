@@ -78,8 +78,8 @@ function App() {
       <Routes>
         <Route path="/" element={<CustomerLayout />}>
           <Route path="" element={<LandingPage />} />
-          <Route path="1" element={<LandingPage1 />} />
-          <Route path="2" element={<LandingPage2 />} />
+          <Route path="temp1" element={<LandingPage1 />} />
+          <Route path="temp2" element={<LandingPage2 />} />
           <Route path="shipping_rate" element={<ShippingRate/>} />
           <Route path="prohibited-items" element={<RestrictedItems/>} />
           <Route path="parcel-guide" element={<ParcelGuide/>} />
